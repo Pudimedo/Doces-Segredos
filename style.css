@@ -1,0 +1,66 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FEC2F2;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #C3EAFE;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 36px;
+    margin: 0;
+    text-align: left;
+    flex: 1;
+}
+
+nav {
+    text-align: right;
+    flex: 1;
+}
+
+nav a {
+    color: #FEFFEB;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.barra_de_pesquisa {
+    display: flex;
+    background-color: transparent;
+    border: #fff solid 3px;
+    max-width: 300px;
+    border-radius: 20px;
+    flex-direction: row-reverse;
+    position: relative;
+    flex: 1;
+    justify-content: end;
+}
+
+#lupa {
+    margin: 2px 5px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
