@@ -1,0 +1,113 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FEC2F2;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #C3EAFE;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 36px;
+    margin: 0;
+    text-align: left;
+    flex: 1;
+}
+
+nav {
+    text-align: right;
+    flex: 1;
+}
+
+nav a {
+    color: #FEFFEB;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permite o ajuste para múltiplas linhas */
+    justify-content: space-evenly; /* Espalha os bombons uniformemente */
+    gap: 20px; /* Espaço entre os bombons */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.bombom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #F5A8D0; /* Fundo rosa */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Largura fixada para cada bombom */
+    position: relative;
+}
+
+.bombom h2 {
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+}
+
+.img_bombom {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.preco {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.add-to-cart {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #C3EAFE;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #9AD1E5; /* Cor de hover para o botão */
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
