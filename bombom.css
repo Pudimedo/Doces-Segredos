@@ -44,9 +44,9 @@ nav a {
 
 .container {
     display: flex;
-    flex-wrap: wrap; /* Permite o ajuste para múltiplas linhas */
-    justify-content: space-evenly; /* Espalha os bombons uniformemente */
-    gap: 20px; /* Espaço entre os bombons */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
@@ -60,11 +60,11 @@ nav a {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #F5A8D0; /* Fundo rosa */
+    background-color: #F5A8D0;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    width: 250px; /* Largura fixada para cada bombom */
+    width: 250px;
     position: relative;
 }
 
@@ -102,7 +102,7 @@ nav a {
 }
 
 .add-to-cart:hover {
-    background-color: #9AD1E5; /* Cor de hover para o botão */
+    background-color: #9AD1E5;
 }
 
 footer {
@@ -110,4 +110,107 @@ footer {
     text-align: center;
     padding: 10px;
     margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+
+    .container {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .bombom {
+        width: 220px;
+        padding: 15px;
+    }
+
+    .bombom h2 {
+        font-size: 18px;
+    }
+
+    .img_bombom {
+        width: 130px;
+        height: 130px;
+    }
+
+    .preco {
+        font-size: 16px;
+    }
+
+    .add-to-cart {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin: 0 8px;
+    }
+
+    .container {
+        padding: 10px;
+        gap: 15px;
+        max-width: 100%;
+    }
+
+    .bombom {
+        width: 180px;
+        padding: 12px;
+    }
+
+    .bombom h2 {
+        font-size: 16px;
+    }
+
+    .img_bombom {
+        width: 120px;
+        height: 120px;
+    }
+
+    .preco {
+        font-size: 14px;
+    }
+
+    .add-to-cart {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
 }
